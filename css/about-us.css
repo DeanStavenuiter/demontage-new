@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Shree";
+  src: url(/shree/Shree\ Devanagari\ 714.ttf),
+    url(/shree/Shree\ Devanagari\ 714.woff),
+    url(/shree/Shree\ Devanagari\ 714.woff2);
+}
+h1,
+p {
+  color: white;
+  font-family: "Shree";
+}
+
+main {
+    height: 100vh;
+    margin-top: 150px;
+}
+
+.about-us {
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    padding: 50px;
+}

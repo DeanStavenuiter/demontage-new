@@ -1,24 +1,10 @@
-.event {
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
+  @media only screen and (max-width: 875px) {
+.events {
+  margin-top: 150px;
+  justify-content: unset;
 }
-.poster {
-  width: 100%;
-  height: auto;
+main{
+  height: 80vh;
 }
-
-.poster img {
-  max-width: 600px;
-  height: auto;
-}
-
-.event-info {
-  background-color: rgb(28, 28, 28);
-  padding: 15px;
-}
-
-.date-and-place {
-    display: flex;
-    justify-content: space-between;
   }
+  

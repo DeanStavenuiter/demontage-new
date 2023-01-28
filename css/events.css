@@ -47,7 +47,7 @@ h1 {
 }
 
 main {
-  height: 85vh;
+  height: 100vh;
 }
 @media only screen and (max-width: 875px) {
   .poster img {
@@ -58,8 +58,14 @@ main {
     margin-top: 100px;
     padding: 15px;
   }
+  .past-events-posters{
+    flex-direction: column;
+  }
 
   .mobile-dropdown {
     background-color: rgba(71, 71, 71, 0.95);
+  }
+  main {
+    height: 130vh;
   }
 }

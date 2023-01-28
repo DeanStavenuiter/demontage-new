@@ -85,6 +85,9 @@ const demontageOnePics = [
   "/images/demontage01-pics/_DSC9418.jpg",
   "/images/demontage01-pics/_DSC8626.jpg",
 ];
+
+
+
 //toggle modal
 function toggleModal() {
   const { classList } = document.body;
@@ -106,7 +109,7 @@ demontageOnePics.forEach((picture) => {
 
   imgTag.src = `${picture}`;
   imgTag.className = "single-img";
-  imgTag.alt = "demontage picture";
+  imgTag.alt = "demontage first event picture";
   imgTag.loading = "lazy";
   imgTag.addEventListener("click", toggleModal);
 
@@ -118,3 +121,4 @@ demontageOnePics.forEach((picture) => {
     }
   });
 });
+

@@ -1,3 +1,8 @@
+window.lozad
+
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+
 const demontageTwoPics = [
 "/images/demontage02-pics/_DOA0004.jpg",
 "/images/demontage02-pics/_DOA0011.jpg",
@@ -137,17 +142,18 @@ function toggleModal() {
   }
 
 //iterate over array and return images 
-demontageTwoPics.forEach((picture) => {
+demontageTwoPics.forEach((picture, index) => {
 
   const photoAlbum = document.querySelector(".photo-album-2");
 
   const imgTag = document.createElement("img");
-  imgTag.innerHTML = photoAlbum.appendChild(imgTag);
+  photoAlbum.appendChild(imgTag);
 
   imgTag.src = picture;
-  imgTag.className = "single-img";
-  imgTag.alt = "demontage 2nd event picture";
+  imgTag.className = "single-img lozad";
+  imgTag.alt = "demontage 2nd event picture" + index;
   imgTag.loading = "lazy";
+  imgTag.setAttribute("data-src", picture)
   imgTag.addEventListener("click", toggleModal);
 
   //click the image and show in modal

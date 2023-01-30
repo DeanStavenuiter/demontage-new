@@ -4,12 +4,16 @@
     url(/shree/Shree\ Devanagari\ 714.woff),
     url(/shree/Shree\ Devanagari\ 714.woff2);
 }
-h1,
+
 p {
   color: white;
   font-family: "Shree";
 }
 
+h1{
+  color: white;
+  font-family: var(--font);
+}
 main {
     height: 100vh;
     margin: 130px auto 0;
@@ -36,6 +40,20 @@ main {
   justify-content: center;
   align-items: center;
 }
-img{
+.about-us-pic img{
   max-width: 40vw;
 }
+
+@media only screen and (max-width: 875px) {
+  
+  .about-us{
+    max-width: 80vw;
+  }
+  .about-us-pic img{
+    max-width: 80vw;
+  }
+  main {
+    margin-top: 15px
+  }
+
+    }

@@ -1,16 +1,7 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  font-family: "Helveticaneueltstd roman", sans-serif;
-  color: rgb(240, 240, 240);
-}
 h1 {
+  color: white;
   font-weight: 500;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .events {

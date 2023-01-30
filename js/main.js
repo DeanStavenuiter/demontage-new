@@ -12,9 +12,9 @@ dropdown.addEventListener("mouseout", (e) => {
 })
 
 mobilePhotoBook.addEventListener('click', (e) => {
-    if (dropdownMobile.style.display === "none"){
-        dropdownMobile.style.display = "flex"
-    } else{
+    if (dropdownMobile.style.display === "flex"){
         dropdownMobile.style.display = "none"
+    } else{
+        dropdownMobile.style.display = "flex"
     }
 })

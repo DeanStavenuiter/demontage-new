@@ -26,6 +26,7 @@ h1 {
 .event-info {
   background-color: rgb(28, 28, 28);
   padding: 15px;
+  max-width: 600px;
 }
 .date-and-place {
   display: flex;
@@ -37,9 +38,6 @@ h1 {
   gap: 10px;
 }
 
-main {
-  height: 100vh;
-}
 @media only screen and (max-width: 875px) {
   .poster img {
     width: 100%;
@@ -55,8 +53,5 @@ main {
 
   .mobile-dropdown {
     background-color: rgba(71, 71, 71, 0.95);
-  }
-  main {
-    height: 130vh;
   }
 }
